@@ -63,27 +63,6 @@ console.log("Funcion si color del Arco Iris");
 coloresArcoIris(["rojo", "blanco", "verde", "negro", "amarillo", "celeste", "naranja"]);
 
 
-
-function siPar(numeros: number[])
-{
-    // let respuesta:boolean;
-
-    for(let i = 0; i<numeros.length; i++)
-    {
-        if(numeros[i]  % 2 == 0)
-        {
-            console.log("Existe un numero par en el conjunto.");
-
-            break;
-        }
-    }
-}
-
-console.log("Funcion si numero par en el array");
-
-
-siPar([1, 3, 5, 2]);
-
 function siMPrimeraLetra(nombres:string[])
 {
     let texto: string[] = [];
