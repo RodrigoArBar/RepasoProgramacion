@@ -63,32 +63,6 @@ console.log("Funcion si color del Arco Iris");
 coloresArcoIris(["rojo", "blanco", "verde", "negro", "amarillo", "celeste", "naranja"]);
 
 
-function siMPrimeraLetra(nombres:string[])
-{
-    let texto: string[] = [];
-    let salida:boolean;
-
-    for(let nombre of nombres)
-    {
-        if(nombre[0] == "P")
-        {
-            texto.push(nombre)
-        }
-    }
-
-    if(nombres.length == texto.length)
-    {
-        salida = true;
-        console.log(salida);
-        
-    }
-
-}
-
-console.log("Funcion si todos los nombres array empiezan por le letra P");
-
-siMPrimeraLetra(["Pepe", "Pedro", "Patricia"])
-
 function numCaracteres(texto:string[])
 {
     let numero:number = 0

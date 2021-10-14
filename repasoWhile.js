@@ -1,11 +1,51 @@
-function coloresArcoIris(n) {
-    var colores = "";
+function siPar(numeros) {
     var i = 0;
-    do {
-        if (n[i] == "rojo" || n[i] == "naranja" || n[i] == "amarillo" || n[i] == "verde" || n[i] == "azul" || n[i] == "añil" || n[i] == "violeta") {
-            colores += n[i];
+    while (i < numeros.length) {
+        if (numeros[i] % 2 == 0) {
+            console.log("Existe un numero par en el conjunto.");
+            break;
         }
-    } while (i < n.length);
-    console.log(colores);
+        i++;
+    }
 }
-coloresArcoIris(["rojo", "blanco", "verde", "negro", "amarillo", "celeste", "naranja"]);
+console.log("Funcion si numero par en el array");
+var cadena = [1, 5, 7, 2];
+siPar(cadena);
+// function siMPrimeraLetra(nombres:string[])
+function siMPrimeraLetra(nombres) {
+    var i = 0;
+    var salida;
+    while (i < nombres.length) {
+        if (nombres[i][0] == "M") {
+            salida = true;
+        }
+        else {
+            salida = false;
+            break;
+        }
+        i++;
+    }
+    console.log(salida);
+}
+// {
+//     // let texto: string[] = [];
+//     let salida:boolean;
+//     for(let nombre of nombres)
+//     {
+//         if(nombre[0] == "P")
+//         {
+//             // texto.push(nombre)
+//             salida = true;
+//             console.log(salida);
+//         }else
+//         {
+//             salida = true;
+//             console.log(salida);
+//         }
+//     }
+//     // if(nombres.length == texto.length)
+//     // {
+//     // }
+// }
+console.log("\nFuncion si todos los nombres array empiezan por le letra M");
+siMPrimeraLetra(["Maria", "Marcos", "Manuel"]);
